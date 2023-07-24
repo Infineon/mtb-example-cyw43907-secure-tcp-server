@@ -5,7 +5,7 @@
 * TCP server operation.
 *
 *******************************************************************************
-* $ Copyright 2021 Cypress Semiconductor $
+* $ Copyright 2021-2023 Cypress Semiconductor $
 *******************************************************************************/
 
 /* Header file includes */
@@ -33,8 +33,8 @@
 /* TCP server task header file. */
 #include "secure_tcp_server.h"
 
-/* lwIP related header files. */
-#include "cy_lwip.h"
+/* IP address related header files (part of the lwIP TCP/IP stack). */
+#include "ip_addr.h"     
 
 /* to use the portable formatting macros */
 #include <inttypes.h>
